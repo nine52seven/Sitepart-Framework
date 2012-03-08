@@ -43,8 +43,10 @@ abstract class SiteControllerAbstract extends Zend_Controller_Action
             $this->smarty->assign('userInfo', $this->session->userInfo);
         }
         
-        //站点名称:
+        //站点名称,开发小组:
         $this->smarty->assign('sitename', $this->config->site->siteName);
+        $this->smarty->assign('sitedev', $this->config->site->siteDev);
+
 
     }
     

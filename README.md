@@ -51,6 +51,7 @@ RewriteCond %{REQUEST_FILENAME} -d
 RewriteRule ^.*$ - [NC,L]
 RewriteRule ^.*$ index.php [NC,L]
 ```
+还需要把*application/views/template_c*目录设置成可写
 
 最后,把域名目录指到html目录下就ok了
 
