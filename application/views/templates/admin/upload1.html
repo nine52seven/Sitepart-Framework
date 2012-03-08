@@ -1,0 +1,82 @@
+{include file="admin/header.html"}
+<div class='container-fluid'>
+    <div class='row-fluid'>
+        {include file="admin/left.html"}
+        <div class='span10'>
+            <form class='form-horizontal' action='/admin/upload/success' method='post'>
+                <legend>上传图片</legend>
+                <div class='control-group'>
+                    <label class='control-label' for='input-gtitle'>组照标题:</label>
+                    <div class='controls'>
+                        <input type='text' class='span6' id='input-gtitle'>
+                    </div>
+                </div>
+
+                <div class='control-group'>
+                    <label class='control-label' for='input-gcontent'>组照说明:</label>
+                    <div class='controls'>
+                        <textarea rows="3" class="span6" id='input-gcontent'></textarea>
+                        <p class="help-block">包含时间,地点,事件,人物...</p>
+                    </div>
+                </div>
+                
+                <div class='control-group'>
+                    <label class='control-label' for='input-keyword'>关键词:</label>
+                    <div class='controls'>
+                        <input type='text' class='span6' id='input-keyword'>
+                        <p class="help-block">请用半角逗号间隔</p>
+                    </div>
+                </div>
+
+                <div class='control-group'>
+                    <label class='control-label' for='input-signature'>署名:</label>
+                    <div class='controls'>
+                        <input type='text' class='input-small' id='input-signature'>
+                    </div>
+                </div>
+
+                <div class='control-group'>
+                    <label class='control-label' for='input-date'>拍摄日期:</label>
+                    <div class='controls'>
+                        <input type='text' class='input-small' id='input-date'>
+                    </div>
+                </div>
+
+                <div class='control-group'>
+                    <label class='control-label' for='input-area'>拍摄地区:</label>
+                    <div class='controls'>
+                        <input type='text' class='input-small' id='input-area'>
+                    </div>
+                </div>
+
+                <div class='control-group'>
+                    <label class='control-label' for='input-sort'>图片分类:</label>
+                    <div class='controls'>
+                        <select id="input-sort" class='span2'>
+                            {foreach from=$categorys key=n item=category}
+                            <option value='{$category.name}'>{$category.name}</option>
+                            {/foreach}
+                        </select>
+                    </div>
+                </div>
+                <hr/>
+                <div class='control-group'>
+                    <label class='control-label' for='input-title'>单张说明:</label>
+                    <div class='controls'>
+                        <input type='file' id='input-file' class='input-file'>
+                        <textarea rows="2" class="span6" id='input-title'></textarea>
+                    </div>
+                </div>
+
+
+
+                <div class="form-actions">
+                    <button class="btn btn-primary" type="submit">上传</button>
+                    <button class="btn">取消</button>
+                </div>
+
+            </form
+        </div>
+    </div>
+</div>
+{include file='admin/footer.html'}  

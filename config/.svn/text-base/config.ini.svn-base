@@ -1,0 +1,45 @@
+[site]
+siteName    = Imagesite 图片信息管理系统
+siteUrl		= http://photo.sitepart.net
+siteDev		= threepoints
+
+[admin]
+username    = admin
+password    = chaing
+name        = 管理员
+
+[database]
+;数据库连接,命名必须按照以下格式,以便在创建db对象时直接使用
+adapter       = PDO_MYSQL
+params.host		= localhost
+params.username	= root
+params.password	= one2one
+params.dbname   = imageRMS
+params.driver_options.1002	= "SET NAMES utf8"
+
+
+[mail]
+;smtp方式发送email设置
+mailserver      = 
+smtp.auth		= 
+smtp.username	= 
+smtp.password   = 
+smtp.port		= 587
+smtp.ssl		= tls
+mailNote		= 
+activeUrl		= 
+signupUrl		= 
+mailFrom        = 
+
+[log]
+file = /www/logs/irms/debug.log
+
+;EMERG   = 0;  Emergency: 系统不可用
+;ALERT   = 1;  Alert: 报警
+;CRIT    = 2;  Critical: 紧要
+;ERR     = 3;  Error: 错误
+;WARN    = 4;  Warning: 警告
+;NOTICE  = 5;  Notice: 通知
+;INFO    = 6;  Informational: 一般信息
+;DEBUG   = 7;  Debug: 小时消息
+level = 7

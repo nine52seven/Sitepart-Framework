@@ -1,0 +1,15 @@
+<div class='navbar navbar-fixed-top'>
+    <div class='navbar-inner'>
+        <div class='container-fluid'>
+            <a href='#' class='brand'>MIMS</a>
+            <div class='nav-collapse collapse'>
+                <ul class='nav'>
+                    <li class='active'><a href='#'>主页</a></li>
+                    <li><a href='#'>关于</a></li>
+                    <li><a href='#'>联系我们</a></li>
+                </ul>
+                <p class='navbar-text pull-right'>欢迎你,{$userInfo.name}</p>
+            </div>
+        </div>
+    </div>  
+</div>

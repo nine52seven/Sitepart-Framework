@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <title>{$sitename}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="图片,图片管理系统,图片管理,图片上传,视频管理,图片浏览">
+    <meta name="author" content="">
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!-- Le styles -->
+    <link href="/bootstrap/css/bootstrap.css" rel="stylesheet">
+    {literal}
+    <style type="text/css">
+        body {
+            padding-top: 60px;
+            padding-bottom: 40px;
+        }
+    </style>
+    {/literal}
+</head>
+
+<div class='navbar navbar-fixed-top'>
+    <div class='navbar-inner'>
+        <div class='container-fluid'>
+            <a href='/' class='brand'>Imagesite</a>
+            <div class='nav-collapse collapse'>
+                <ul class='nav'>
+                    <li><a href='/demo'><i class="icon-eye-open icon-white"></i> 试用</a></li>
+                    <li><a href='#'><i class="icon-file icon-white"></i> 产品报价</a></li>
+                    <li><a href='/about'><i class="icon-tag icon-white"></i> 关于</a></li>
+                    <li><a href='/contact'><i class="icon-fire icon-white"></i> 联系我们</a></li>
+                </ul>
+                <p class='navbar-text pull-right'>欢迎光临本站</p>
+            </div>
+        </div>
+    </div>  
+</div>

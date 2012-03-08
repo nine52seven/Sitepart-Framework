@@ -1,0 +1,62 @@
+{include file='header.html'}
+<div class="container">
+    <div class='row'>
+        
+        <div class='span8 offset2'>
+            <h2>关于我们</h2>
+            <p>
+                我们的团队名称是threepoints...<br/>
+                我们是三个专注于互联网的年轻人...<br/>
+                我们中有普通青年,文艺青年,仅此两种...<br/>
+                
+            </p>
+            <hr>
+            <h2>团队</h2>
+            <br/>
+            <div class='row-fluid'>
+                <div class='span4'>
+                    <img src='/images/9527.jpg' width='60px' height='60px' class='pull-left'/>
+                    <address style='margin-left:70px;'>
+                        <stong>Andy Chen</strong>
+                        <br/>
+                        <a href='mailto:nine52seven@gmail.com'>nine52seven At gmail.com</a>
+                        <br/>
+                        <a href='http://twitter.com/nine52seven' target='_blank'>@nine52seven</a>
+                        <br/>
+                        <blockquote><small>i'm running at the end of internet...</small></blockquote>
+                    </address>
+                </div>
+            
+                <div class='span4'>
+                    <img src='/images/kevin.jpg' width='60px' height='60px' class='pull-left'/>
+                    <address style='margin-left:70px;'>
+                        <stong>Kevin Lee</strong>
+                        <br/>
+                        <a href='mailto:rui7905@gmail.com'>rui7905 At gmail.com</a>
+                        <br/>
+                        <a href='http://twitter.com/rui7905' target='_blank'>@rui7905</a>
+                        <br/>
+                        <blockquote><small>混事业型大叔！互联网！魔兽玩家！射手男。</small></blockquote>
+                    </address>
+                </div>
+                
+                <div class='span4'>
+                    <img src='/images/stavid.jpg' width='60px' height='60px' class='pull-left'/>
+                    <address style='margin-left:70px;'>
+                        <stong>Stavid Ren</strong>
+                        <br/>
+                        <a href='mailto:stavid@gmail.com'>stavidren At gmail.com</a>
+                        <br/>
+                        <a href='http://twitter.com/stavid' target='_blank'>@stavid</a>
+                        <br/>
+                        <blockquote><small>所想见到的总是在所能见到的现实场景中变得平庸和黯淡</small></blockquote>
+                    </address>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+
+
+{include file='footer.html'}
