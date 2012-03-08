@@ -1,5 +1,6 @@
-##Sitepart Framework
-####简介
+## Sitepart Framework
+---
+#### 简介
 此框架是基于Zend Framewok来改写的,其中包含了:
 *** Zend Framework
 *** jQuery
