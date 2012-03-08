@@ -50,7 +50,7 @@ abstract class AdminControllerAbstract extends Zend_Controller_Action
         $this->_verify();
 
         //公共信息:
-        $this->_getPublicInfo();
+        //$this->_getPublicInfo();
 
     }
 

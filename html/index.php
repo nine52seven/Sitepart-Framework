@@ -52,7 +52,6 @@ $front->setParam('noViewRenderer', TRUE);
 $arrayControllerDirectory = array(
                                 'default' => ROOT_PATH . '/application/controllers/',
                                 'admin' => ROOT_PATH . '/application/controllers/admin/',
-                                'demo' => ROOT_PATH . '/application/controllers/demo/',
                                 );
 $front->setControllerDirectory( $arrayControllerDirectory );
 
