@@ -1,11 +1,11 @@
 ## Sitepart Framework
----
 #### 简介
 此框架是基于Zend Framewok来改写的,其中包含了:
-**** Zend Framework
-**** jQuery
-**** bootstrap
-**** Smarty
+
+  * Zend Framework
+  * jQuery
+  * bootstrap
+  * Smarty
 
 #### 安装
 此框架不自带zf库和smarty,需要在配置文件中修改两个库文件的路径
