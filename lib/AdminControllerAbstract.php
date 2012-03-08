@@ -45,6 +45,7 @@ abstract class AdminControllerAbstract extends Zend_Controller_Action
         
         //站点名称:
         $this->smarty->assign('sitename', $this->config->site->siteName);
+        $this->smarty->assign('sitedev', $this->config->site->siteDev);
         
         //是否验证:
         $this->_verify();
