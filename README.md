@@ -11,14 +11,14 @@ Sitepart Framework
 
 安装
 ----
-此框架不自带zf库和smarty,需要在配置文件中修改两个库文件的路径
+此框架不自带zf库和smarty,需要在*html/index.php*文件中修改两个库文件的路径
 
 
     define('__ZEND_PATH__', '/www/public/libs/ZendFramework-1.10.6/library');   //修改成你自己的路径
     define('__SMARTY_PATH__', '/www/public/libs/Smarty-2.6.18');    //同上
 
 
-在config/config.ini文件中,需要定义以下几个常量:
+在*config/config.ini*文件中,需要定义以下几个常量:
 
 ```ini
 [site]
@@ -41,7 +41,7 @@ params.dbname   = dbname
 params.driver_options.1002  = "SET NAMES utf8"
 ```
 
-需要开启web服务器的rewrite功能,下面是apache下的.htaccess文件,放在html目录下(已经自带)
+需要开启web服务器的rewrite功能,下面是apache下的*.htaccess*文件,放在html目录下(已经自带)
 
 ```ini
 RewriteEngine on
