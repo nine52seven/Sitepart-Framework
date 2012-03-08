@@ -55,5 +55,29 @@ RewriteRule ^.*$ index.php [NC,L]
 
 最后,把域名目录指到html目录下就ok了
 
+目录结构说明
+----------
+
+```ruby
+sitepart.net
+|
+|___application
+|   |____controllers   //action文件
+|   |____models        //数据模型
+|   |____views         //smarty模板
+|
+|___config             //配置文件
+|___doc                //文档
+|___html               //静态文件
+|   |____bootstrap     //boorstrap库
+|   |____images        //图片
+|   |____scripts       //js
+|   |____styles        //css
+|   |____index.php     //入口文件
+|
+|___lib //自定义库文件
+```
+
+
 祝顺利!
 -------
