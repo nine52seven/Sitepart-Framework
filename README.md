@@ -18,6 +18,8 @@ define('__ZEND_PATH__', '/www/public/libs/ZendFramework-1.10.6/library');   //�
 define('__SMARTY_PATH__', '/www/public/libs/Smarty-2.6.18');    //同上
 ```
 
+**jQuery**使用的是[Google Libraries API](http://code.google.com/intl/zh-CN/apis/libraries/)(貌似被和谐了)
+
 在 **config/config.ini** 文件中,需要定义以下几个常量:
 
 ```ini
