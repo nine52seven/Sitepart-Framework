@@ -1,7 +1,0 @@
-{include file='header.html'}
-<body>
-    <div class='span8 offset2'>
-        <div class="hero-unit">
-            <H1>{$bodyTitle}</H1>
-        </div>
-{include file='footer.html'}
