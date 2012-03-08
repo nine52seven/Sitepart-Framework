@@ -4,10 +4,10 @@ Sitepart Framework
 ----
 此框架是基于Zend Framewok来改写的,其中包含了:
 
-  * Zend Framework
-  * jQuery
-  * bootstrap
-  * Smarty
+  * [Zend Framework](http://framework.zend.com/)
+  * [jQuery](http://jquery.org)
+  * [bootstrap](http://twitter.github.com/bootstrap/)
+  * [Smarty](http://smarty.net)
 
 安装
 ----
