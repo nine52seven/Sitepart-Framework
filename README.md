@@ -59,7 +59,6 @@ RewriteRule ^.*$ index.php [NC,L]
 
 目录结构说明
 ----------
-<<<<<<< HEAD
 
 ```ruby
 sitepart.net
@@ -80,17 +79,6 @@ sitepart.net
 |
 |___lib //自定义库文件
 ```
-=======
-___application
-   |____controllers
-   |____models
-   |____views
-
-___config
-___doc
-___html
->>>>>>> test
-
 
 祝顺利!
 -------
