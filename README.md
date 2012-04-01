@@ -13,10 +13,8 @@ Sitepart Framework
 ----
 此框架不自带zf库和smarty,需要在 **html/index.php** 文件中修改两个库文件的路径
 
-```ruby
-define('__ZEND_PATH__', '/www/public/libs/ZendFramework-1.10.6/library');   //修改成你自己的路径
-define('__SMARTY_PATH__', '/www/public/libs/Smarty-2.6.18');    //同上
-```
+    define('__ZEND_PATH__', '/www/public/libs/ZendFramework-1.10.6/library');   //修改成你自己的路径
+    define('__SMARTY_PATH__', '/www/public/libs/Smarty-2.6.18');    //同上
 
 **jQuery**使用的是[Google Libraries API](http://code.google.com/intl/zh-CN/apis/libraries/)(貌似被和谐了)
 
