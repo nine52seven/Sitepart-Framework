@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Sitepart-framework by chaing</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Sitepart-framework</h1>
+<p>一个zf的例子,下载下来可以直接搭建网站</p>
+        <p class="view"><a href="https://github.com/chaing/Sitepart-Framework">View the Project on GitHub <small>chaing/Sitepart-Framework</small></a></p>
+        <ul>
+          <li><a href="https://github.com/chaing/Sitepart-Framework/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/chaing/Sitepart-Framework/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/chaing/Sitepart-Framework">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>Sitepart Framework</h1>
+
+<h2>简介</h2>
+
+<p>此框架是基于 <strong>Zend Framewok</strong> 来改写的,其中包含了:</p>
+
+<ul>
+<li><a href="http://framework.zend.com/">Zend Framework</a></li>
+<li><a href="http://jquery.org">jQuery</a></li>
+<li><a href="http://twitter.github.com/bootstrap/">bootstrap</a></li>
+<li><a href="http://smarty.net">Smarty</a></li>
+</ul><h2>安装</h2>
+
+<p>此框架不自带zf库和smarty,需要在 <code>html/index.php</code> 文件中修改两个库文件的路径</p>
+
+<pre><code>define('__ZEND_PATH__', '/www/public/libs/ZendFramework-1.10.6/library');   //修改成你自己的路径
+define('__SMARTY_PATH__', '/www/public/libs/Smarty-2.6.18');    //同上
+</code></pre>
+
+<p><code>jQuery</code> 使用的是<a href="http://code.google.com/intl/zh-CN/apis/libraries/">Google Libraries API</a>(貌似被和谐了)</p>
+
+<p>在 <code>config/config.ini</code> 文件中,需要定义以下几个常量:</p>
+
+<pre><code>[site]
+siteName    = Sitepart  ;站点名称
+siteUrl     = http://site-domain    ;站点域名
+siteDev     = threepoints   ;开发者
+
+[admin]
+username    = admin ;后台管理员信息
+password    = admin
+name        = 管理员
+
+[database]
+;数据库连接,命名必须按照以下格式,以便在创建db对象时直接使用
+adapter       = PDO_MYSQL
+params.host     = localhost
+params.username = root
+params.password = root
+params.dbname   = dbname
+params.driver_options.1002  = "SET NAMES utf8"
+</code></pre>
+
+<p>需要开启web服务器的<code>rewrite</code>功能,下面是apache下的 <code>.htaccess</code> 文件,放在html目录下(已经自带)</p>
+
+<pre><code>RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} -s [OR]
+RewriteCond %{REQUEST_FILENAME} -l [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^.*$ - [NC,L]
+RewriteRule ^.*$ index.php [NC,L]
+</code></pre>
+
+<p>还需要把 <code>application/views/template_c</code> 目录设置成可写</p>
+
+<p>最后,把域名目录指到 <code>html</code> 目录下就ok了</p>
+
+<h2>目录结构说明</h2>
+
+<pre>
+sitepart.net
+|
+|___application
+|   |____controllers   //action文件
+|   |____models        //数据模型
+|   |____views         //smarty模板
+|
+|___config             //配置文件
+|___doc                //文档
+|___html               //静态文件
+|   |____bootstrap     //boorstrap库
+|   |____images        //图片
+|   |____scripts       //js
+|   |____styles        //css
+|   |____index.php     //入口文件
+|
+|___lib //自定义库文件
+
+</pre>
+
+<h2>祝顺利!</h2>
+
+<p>END</p>
+      </section>
+    </div>
+    <footer>
+      <p>Project maintained by <a href="https://github.com/chaing">chaing</a></p>
+      <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
+    </footer>
+    <!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
+  </body>
+</html>
